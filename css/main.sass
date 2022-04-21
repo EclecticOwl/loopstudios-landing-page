@@ -4,6 +4,7 @@ $dark-gray: hsl(0, 0%, 55%)
 $darker-gray: hsl(0, 0%, 41%)
 $alata : 'Alata', 'sans-serif'
 $josefin: 'Josefin Sans', 'sans-serif'
+$overlay: rgba(228, 227, 227, 0.493)
 
 
 *
@@ -43,6 +44,19 @@ nav
     .nav-links a
         color: $white
         text-decoration: none
+        position: relative
+    
+    .nav-links a:hover::after
+        position: absolute
+        content: "__"
+        bottom: 0
+        left: 0
+        right: 0
+        transform: translate(30%, 50%)
+
+
+
+
     .nav-links ul
         list-style-type: none
         display: flex
@@ -107,6 +121,9 @@ nav
             border: 1px solid black
             padding: .5em 1.5em
             letter-spacing: .25em
+        a:hover
+            background-color: black
+            color: $white
 
     .creations-body
         display: grid
@@ -117,6 +134,7 @@ nav
 
 
         .creations-card
+            position: relative
             height: 450px
             display: flex
             align-items: flex-end
@@ -126,6 +144,25 @@ nav
 
             p
                 padding: 1em
+        
+        .creations-card:hover::before
+            position: absolute
+            content: ''
+            top: 0
+            left: 0
+            height: 100%
+            width: 100%
+            background-color: $overlay
+        
+        .creations-card:hover
+            
+            p
+                color: black
+                z-index: 5
+
+        
+        
+
         
 .deep-earth
     background-image: url(../images/desktop/image-deep-earth.jpg)
@@ -166,6 +203,9 @@ footer
         height: 100
         width: 100
 
+    a:hover
+        border-bottom: 2px solid white
+
 .footer-social 
     display: flex
     gap: 1em
@@ -179,6 +219,20 @@ footer
         display: flex
         gap: 2em
         list-style-type: none
+
+        a
+            color: $white
+            text-decoration: none
+            position: relative
+        
+        a:hover::after
+            position: absolute
+            content: "__"
+            bottom: 0
+            left: 0
+            right: 0
+            transform: translate(30%, 50%)
     
     span
         color: $dark-gray
+
