@@ -102,9 +102,43 @@ nav
 
     .creations-body
         display: grid
-        gap: 1em
-        grid-template-columns: repeat(4, 1fr)
+        grid-template-columns: repeat(4, minmax(150px, 300px))
+        justify-content: space-between
+        width: 100%
+        gap: 2em 1em
 
+
+        .creations-card
+            height: 450px
+            display: flex
+            align-items: flex-end
+            padding: 1em 1em
+            color: $white
+            font-size: 2em
+
+            p
+                padding: 1em
+        
+.deep-earth
+    background-image: url(../images/desktop/image-deep-earth.jpg)
+.night-arcade
+    background-image: url(../images/desktop/image-night-arcade.jpg)
+.soccer-team
+    background-image: url(../images/desktop/image-soccer-team.jpg)
+.the-grid
+    background-image: url(../images/desktop/image-grid.jpg)
+.up-above
+    background-image: url(../images/desktop/image-from-above.jpg)
+.pocket-borealis
+    background-image: url(../images/desktop/image-pocket-borealis.jpg)
+.curiosity
+    background-image: url(../images/desktop/image-curiosity.jpg)
+.fisheye
+    background-image: url(../images/desktop/image-fisheye.jpg)
+
+.deep-earth, .night-arcade, .soccer-team, .the-grid, .up-above, .pocket-borealis, .curiosity, .fisheye
+    background-size: cover
+    background-size: 100% 100%
 
 
 // Footer
