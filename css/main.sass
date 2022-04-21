@@ -98,7 +98,15 @@ nav
     .creations-header
         display: flex
         justify-content: space-between
+        align-items: center
         width: 100%
+
+        a
+            text-decoration: none
+            color: black
+            border: 1px solid black
+            padding: .5em 1.5em
+            letter-spacing: .25em
 
     .creations-body
         display: grid
@@ -142,3 +150,35 @@ nav
 
 
 // Footer
+footer
+    margin-top: 2em
+    padding: 2em 0
+    background-color: $black
+    color: $white
+.footer-top 
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+
+    span
+        font-size: 1.5em
+    img
+        height: 100
+        width: 100
+
+.footer-social 
+    display: flex
+    gap: 1em
+
+.footer-bottom
+    margin-top: 1em
+    display: flex
+    justify-content: space-between
+
+    ul
+        display: flex
+        gap: 2em
+        list-style-type: none
+    
+    span
+        color: $dark-gray
