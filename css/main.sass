@@ -72,7 +72,7 @@ nav
     h1
         color: $white
         padding: 1em 2em
-        font-size: 3em
+        font-size: 2.5em
         border: 1px solid $white
 
 // Main
@@ -96,7 +96,7 @@ nav
         gap: .5em
 
         h2
-            font-size: 3em
+            font-size: 2em
             font-family: $josefin
         p
             color: $dark-gray
@@ -236,6 +236,23 @@ footer
     span
         color: $dark-gray
 
+
+
+@media(max-width: 1100px)
+    .mid
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+
+        .mid-text
+            margin: 3em 0
+            position: static
+            padding: 0
+            width: 100%
+            text-align: center
+
+
 @media (max-width: 850px)
     .container
         margin: 0 2em
@@ -244,11 +261,14 @@ footer
         height: 750px
         background-image: url("../images/mobile/image-hero.jpg")
     .header-text
-        
-
         h1
-            padding: 1em
+            padding: .5em
             width: 100%
             font-family: $josefin
+    .mid
+        .mid-image img
+            height: auto
+            width: 100%
+    
 
 
