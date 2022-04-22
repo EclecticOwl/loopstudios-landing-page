@@ -32,6 +32,7 @@ header
    background-position: center
    height: 650px
 
+
 nav
     height: 10%
     display: flex
@@ -71,9 +72,8 @@ nav
     h1
         color: $white
         padding: 1em 2em
-        font-size: 3.5em
+        font-size: 3em
         border: 1px solid $white
-        letter-spacing: .25em
 
 // Main
 .mid
@@ -235,4 +235,20 @@ footer
     
     span
         color: $dark-gray
+
+@media (max-width: 850px)
+    .container
+        margin: 0 2em
+@media (max-width: 750px)
+    header
+        height: 750px
+        background-image: url("../images/mobile/image-hero.jpg")
+    .header-text
+        
+
+        h1
+            padding: 1em
+            width: 100%
+            font-family: $josefin
+
 
