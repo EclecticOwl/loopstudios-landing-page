@@ -29,32 +29,13 @@ Users should be able to:
 
 ![](./screenshot.jpg)
 
-**Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
-
 ## My process
+- Desktop first workflow
 
 ### Built with
-
-
-
-
+- HTML
+- SASS (SASS)
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
-
-To see how you can add code snippets, see below:
-
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
-```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
-```
+I discovered the HTML picture element. I was trying my best to decide how to display a certain image on the page and this element allowed me to display them for different viewport widths. Though, in the future, I will have to take into consideration browser support for this element and start figuring out polyfills more. 
