@@ -1,5 +1,4 @@
 # Frontend Mentor - Loopstudios landing page solution
-# Still in progress
 
 Github Pages Link: https://eclecticowl.github.io/loopstudios-landing-page/
 
